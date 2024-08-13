@@ -1,0 +1,308 @@
+body{
+    margin: 0;
+    background: linear-gradient(to bottom right, #fdf2a5, #ffaaf8);
+}
+
+/*------------------------------------- Navigation Bar -------------------------------------*/
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ff7171;
+    padding: 12px 10%;
+    font-family: "DM Serif Display", serif;
+}
+
+.navbar-element{
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+/*------------------------------------- Restaurant About -------------------------------------*/
+
+.about-restaurant{
+    display: flex;
+    height: 800px;
+}
+
+.restaurant-text{
+    width: 50%;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.restaurant-text-content{
+    padding: 10%;
+}
+
+.restaurant-heading{
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    margin-bottom: 100px;
+}
+
+.restaurant-info{
+    margin-bottom: 100px;
+    font-size: 24px;
+}
+
+.click-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 50px;
+    width: 200px;
+    font-size: 24px;
+    background-color: #ff7171;
+}
+
+.restaurant-image{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.restaurant-image img{
+    height: 100%;
+
+    object-fit: cover;
+}
+
+/*------------------------------------- Restaurant Features -------------------------------------*/
+
+.restaurant-features{
+    height: 800px;
+    display: flex;
+    padding: 0 5%;
+    align-items: center;
+    margin: 5% 0px;
+}
+
+.features-images{
+    height: 700px;
+    width: 50%;
+    overflow: hidden;
+    margin-right: 5%;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 50% 50%;
+}
+
+.features-images-column1{
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    gap: 20px;
+    grid-template-rows: 50% 50%;
+}
+
+.features-images-column1 div{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-images-column1 img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.features-images-column2{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-images-column2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.features-banner{
+    width: 40%;
+    overflow: hidden;
+    background-color: #ff7171;
+    padding: 40px;
+    font-family: "Poppins", sans-serif;
+}
+
+.features-heading p{
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    margin: 0px;
+}
+
+.features-subheading{
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.features-click-me{
+    margin-top: 30px;
+    font-size: 24px;
+    width: 10%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/*------------------------------------- Media Queries -------------------------------------*/
+
+/*---------------------- For Tablets ----------------------*/
+
+@media (max-width: 1300px){
+    .navbar{
+        padding: 12px 3%;
+
+    }
+
+    .navbar-element{
+        letter-spacing: 3px;
+    }
+
+    .restaurant-heading{
+        font-size: 45px;
+        font-weight: 700;
+        letter-spacing: 10px;
+        margin-bottom: 40px;
+    }
+
+    .restaurant-features{
+        height: 600px;
+    }
+
+    .features-images{
+        height: 500px;
+        width: 60%;
+        gap: 30px;
+    }
+
+    .features-banner{
+        padding: 20px;
+    }
+
+    .features-heading p{
+        font-size: 30px;
+    }
+    
+    .features-subheading{
+        margin-bottom: 10px;
+    }
+    
+    .features-click-me{
+        margin-top: 10px;
+    }
+}
+
+/*---------------------- For Mobile Phones ----------------------*/
+
+@media (max-width: 1080px){
+    .navbar{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 12px;
+    }
+
+    .navbar-element{
+        letter-spacing: 3px;
+    }
+
+    .about-restaurant{
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    
+    .restaurant-text{
+        width: 100%;
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .restaurant-text-content{
+        padding: 7%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .restaurant-heading{
+        font-size: 60px;
+        font-weight: 700;
+        letter-spacing: 10px;
+        margin-bottom: 30px;
+    }
+    
+    .restaurant-info{
+        margin-bottom: 50px;
+        font-size: 24px;
+    }
+    
+    .restaurant-image{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .restaurant-image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .restaurant-features{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        padding: 0 5%;
+    }
+
+    .features-images{
+        height: 700px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .features-banner{
+        width: 70%;
+        padding: 40px;
+        margin: 60px;
+    }
+
+    .features-heading p{
+        font-size: 50px;
+    }
+    
+    .features-subheading{
+        margin-bottom: 20px;
+    }
+    
+    .features-click-me{
+        margin-top: 20px;
+    }
+}
